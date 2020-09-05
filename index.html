@@ -9,6 +9,15 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="style.css" rel="stylesheet" />
+  <script>
+    if(window.location.search.indexOf('?dev=true') !== -1) {
+      var script = document.createElement('script');
+      script.src = 'http://livejs.com/live.js';
+      script.type = 'text/javascript';
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(script);
+    }
+  </script>
 </head>
 
 <body>
@@ -78,7 +87,7 @@
         <section class="skills">
           <div class="skills-section-title">Frameworks</div>
           <div>:</div>
-          <div>ExpressJS, Spring, Hibernate, JDBC</div>
+          <div>ExpressJS, PassportJS, Spring, Hibernate, JDBC</div>
         </section>
         <section class="skills">
           <div class="skills-section-title">Databases & Messaging</div>
@@ -98,7 +107,7 @@
         <section class="skills">
           <div class="skills-section-title">Build & Development Tools</div>
           <div>:</div>
-          <div>Docker, Apache Ant, Jenkins, IntelliJ, Postman, Swagger, Packer, VirtualBox, Hyper-V, Vsphere</div>
+          <div>Docker, Apache Ant, Maven, Jenkins, Eclispse, IntelliJ, VS Code, Postman, Swagger, Packer, VirtualBox, Hyper-V, vSphere</div>
         </section>
         <!-- End of SKill set-->
       </div>
@@ -120,26 +129,34 @@
           </div>
           <li class="work-experience">
             Analyzed and finalized requirements with product managers,
-            designed new features along with architects
+            designed new features as per the requirements
           </li>
           <li class="work-experience">
-            Completely owned and delivered new features
+            Completely owned and delivered numerous features
           </li>
           <li class="work-experience">
-            Led a team of four ensuring smooth delivery of product following
-            scrum and sprints, agile methodology.
+            Responsible in various design and development of multiple products through
+            scrum and sprints, agile methodology
+          </li>
+          <li class="work-experience">
+            Involved in various Proof of Concepts development and demonstrating it to PLM and 
+            VPs of which multiple POCs were integrated to main line products to make it feature rich
           </li>
           <li class="work-experience">
             Debugged and troubleshooted Network management application for
-            clients, solving technical issues quickly and accurately.
-          </li>
-          <li class="work-experience">
-            Coordinated with QA team for fixing bugs.
+            clients, solving technical issues quickly and accurately
           </li>
           <li class="work-experience">
             Documented technical workflows and knowledge of features in
             private wiki, reviewed functional specifications, design documents
-            and customer facing documents.
+            and customer facing documents
+          </li>
+          <div><strong>Something Extra</strong></div>
+          <li class="work-experience">
+            Took additional responsibility as Lab SPOC for my team since 2018
+          </li>
+          <li class="work-experience">
+            Member of exCITe team which is responsible for conducting fun and philanthropic activities
           </li>
           <!--Job Title Container-->
         </div>
@@ -157,13 +174,28 @@
             This service gives customers the flexibility to login the way they choose, while providing valuable demographic data
             using simple-click-through and manage the guest related configuration in the customer deployments directly from the
             cloud without any need for any extra on-premise agent. Customers can also get the guest related analytics in their
-            network deployments.
-            <li class="work-experience">Responsible for the Policy based Captive Portal hosting, User and Client-Device registration through Captive Portal.</li>
-            <li class="work-experience">Responsible for the analytics of Guest Network based on the data from Postgres and Elasticsearch.</li>
+            network deployments
+            <li class="work-experience">
+              Implemented Policy based Captive Portal hosting with the ability to edit and customize the splash screens
+            </li>
+            <li class="work-experience">
+              Successfully developed the User and Device registration through Captive Portal based on Onboarding Policies
+            </li>
+            <li class="work-experience">
+              Implemented Social Media OAuth (which includes Facebook, Google, Instagram and LinkedIn) based authentication 
+              and authorization of users to access the Guest Network based on the Onboarding policies
+            </li>
+            <li class="work-experience">
+              Implemented Basic device finger-printing in the Guest Captive Portal registration
+            </li>
+            <li class="work-experience">
+              Implemented the detailed Analytics of Guest Network based on the User session data captured from 
+              Access Points and the user and device based data present in the Postgres and Elasticsearch
+            </li>
           </p>
           <p class="technolgies-used-container">
             <span class="technolgies-used">Technologies Used : </span> 
-            NodeJS, Java, Express, ExtJS 6.5, PostgreSQL, Elasticsearch, Redis, RabbitMQ, Hibernate, Spring, Docker, Kubernetes
+            NodeJS, Java, ExpressJS, PassportJS, ExtJS 6.5, PostgreSQL, Elasticsearch, Redis, RabbitMQ, Hibernate, Spring, Docker, Kubernetes
           </p>
         </div>
         <div class="project  page-break">
@@ -174,25 +206,40 @@
             The Guest & IoT Manager (GIM) is an application that integrates with ExtremeControl. The purpose is to provide non-IT
             personnel with the ability to provision Guest Users and / or Devices within the constraints defined by the
             Administrator. GIM communicates with the ExtremeControl Engine(s) for provisioning of Guest Users and Devices that may
-            access the network through standard process of authentication and authorization by ExtremeControl.
-            <li class="work-experience">Successfully ported legacy JAVA servlet-based application to ExtJS UI framework supported with NodeJs backend through
-            REST. Handled the Guest Self-Registration and Customization of application for different User roles.</li>
-            <li class="work-experience">Designed and developed a Microsoft Outlook Add-in from scratch as a part of GIM product which involved integrating with
-            Microsoft’s Office APIs.</li>
-            <li class="work-experience">Responsible for OpenAPI (Swagger) specification handling for all Third-Party REST APIs exposed from GIM.</li>
-            <li class="work-experience">Designed and implemented the Zero Touch Guest Onboarding functionality which is the unique solution which automates the
-            flow of Registration and Login of Guest in a Captive Portal deployment through a proprietary mechanism.</li>
-            <li class="work-experience">Successfully integrated some of the third-party services to the GIM (Twilio, Clickatell) and PayPal integration as Proof
-            of Concept.</li>
-            <li class="work-experience">Created some of the custom CLI commands that is exposed in GIM appliance and was implemented using Python 2.7</li>
-            <li class="work-experience">Successfully upgraded the Base OS of the OVA distribution to the latest Ubuntu 18.04 LTS from 16.04 LTS which included
-            breaking changes in the network related configurations and created the Hyper-V distribution methodology for GIM
-            appliance using Packer.</li>
-            <li class="work-experience">Brought up Jenkins build server from scratch for nightly builds of the product.</li>
+            access the network through standard process of authentication and authorization by ExtremeControl
+            <li class="work-experience">
+              Successfully ported legacy JAVA servlet-based application to ExtJS UI framework supported with NodeJs backend through
+              REST. Handled the Guest Self-Registration and Customization of application for different User roles
+            </li>
+            <li class="work-experience">
+              Designed and developed a Microsoft Outlook Add-in from scratch as a part of GIM product which involved integrating with
+              Microsoft’s Office APIs
+            </li>
+            <li class="work-experience">
+              Responsible for OpenAPI (Swagger) specification handling for all Third-Party REST APIs exposed from GIM
+            </li>
+            <li class="work-experience">
+              Designed and implemented the Zero Touch Guest Onboarding functionality which is the unique solution which automates the
+              flow of Registration and Login of Guest in a Captive Portal deployment through a proprietary mechanism
+            </li>
+            <li class="work-experience">
+              Successfully integrated some of the third-party services to the GIM (Twilio, Clickatell) and PayPal integration as Proof
+              of Concept
+            </li>
+            <li class="work-experience">
+              Created some of the custom CLI commands that is exposed in GIM appliance and was implemented using Python 2.7</li>
+            <li class="work-experience">
+              Successfully upgraded the Base OS of the OVA distribution to the latest Ubuntu 18.04 LTS from 16.04 LTS which included
+              breaking changes in the network related configurations and created the Hyper-V distribution methodology for GIM
+              appliance using Packer
+            </li>
+            <li class="work-experience">
+              Brought up Jenkins build server from scratch for nightly builds of the product
+            </li>
           </p>
           <p class="technolgies-used-container">
             <span class="technolgies-used">Technologies Used : </span> 
-            NodeJS, Java, Python 2.7, ExtJs 6.5, Express, REST, MySQL, Jersey, JRadius, Tomcat 8
+            NodeJS, Java, Python 2.7, ExtJS 6.5, Express, REST, MySQL, Jersey, JRadius, Tomcat 8
           </p>
         </div>
         <div class="project page-start">
@@ -204,10 +251,18 @@
             the Network Administrator, Ignition Dashboard application is the primary tool to manage the Identity Engines Ignition
             Server. Dashboard lets administrators to manage and monitor the operation of the Ignition Server and set up user
             authentication and authorization policies for the network.
-            <li class="work-experience">Responsible for enhancement to RBAC.</li>
-            <li class="work-experience">Handling of blocking operations during an Extended-HA operation.</li>
-            <li class="work-experience">Enhancement in the Configuration Backup and Restore mechanism.</li>
-            <li class="work-experience">Rebranding from Avaya to Extreme Networks.</li>
+            <li class="work-experience">
+              Responsible for enhancement to RBAC
+            </li>
+            <li class="work-experience">
+              Handling of blocking operations during an Extended-HA operation
+            </li>
+            <li class="work-experience">
+              Enhancement in the Configuration Backup and Restore mechanism
+            </li>
+            <li class="work-experience">
+              Rebranding from Avaya to Extreme Networks
+            </li>
 
           </p>
           <p class="technolgies-used-container">
@@ -256,13 +311,19 @@
     <section>
     <div class="section-title">Honors and Awards</div>
     <div>
-    <li class="work-experience">Awarded <strong>Extreme Spot Award</strong> twice (July 2018, August 2019), for implementing some of the POC items in a small-time frame
-    and successfully demonstrating it to the VP of Software Applications and for quick turnaround and great momentum in the
-    product workflows and ensuring a quality release.</li>
-    <li class="work-experience">Runner-up in <strong>Extreme Networks Techathon-2019</strong> for demonstrating a Proof of Concept of Zero Touch Guest Access
-    functionality, which later got added as a feature in Guest & IoT Manager product</li>
-    <li class="work-experience">Recognized as <strong>Game Changer</strong> in January 2020 for overall performance including demonstrating multiple Proof of Concepts
-    and delivery in Guest & IoT Manager Application through 3 major releases and multiple maintenance releases</li>
+    <li class="work-experience">
+      Awarded <strong>Extreme Spot Award</strong> twice (July 2018, August 2019), for implementing some of the POC items in a small-time frame
+      and successfully demonstrating it to the VP of Software Applications and for quick turnaround and great momentum in the
+      product workflows and ensuring a quality release
+    </li>
+    <li class="work-experience">
+      Runner-up in <strong>Extreme Networks Techathon-2019</strong> for demonstrating a Proof of Concept of Zero Touch Guest Access
+      functionality, which later got added as a feature in Guest & IoT Manager product
+    </li>
+    <li class="work-experience">
+      Recognized as <strong>Game Changer</strong> in January 2020 for overall performance including demonstrating multiple Proof of Concepts
+      and delivery in Guest & IoT Manager Application through 3 major releases and multiple maintenance releases
+    </li>
     </div>
     </section>
   </div>
