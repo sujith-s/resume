@@ -119,7 +119,7 @@ img.avatar {
 .job-title-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 16px;
 }
 
@@ -164,7 +164,7 @@ img.avatar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 0px !important;
 }
 
 .skills-container ul {
